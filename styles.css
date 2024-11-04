@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.parent-container {
+  font-family: "Roboto", "Noto", sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+  /* overflow: hidden; */
+}
+
+.header-container {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255,0.8);
+}
+
+.toggle-btn {
+  font-size: 1.5em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.5em;
+  margin: 1em 1.5em;
+}
+.header-name {
+  font-size: 1.3em;
+  font-weight: 600;
+  margin: 1em;
+  text-align: center;
+}
+
+.nav-container {
+  width: 60%;
+  height: 100%;
+  position: fixed;
+  background-color: white;
+  left: -60%;
+  top: 0;
+  padding: 30px 15px;
+  transition: left 0.3s ease;
+  z-index: 5;
+}
+.nav-container ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+.nav-container ul li {
+  color: black;
+  opacity: 0.6;
+}
+.nav-container.active {
+  left: 0;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 4;
+}
+
+.overlay.active {
+  display: block;
+}
+
+.cart {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.5em;
+  margin: 1em 1.5em;
+}
+
+.outerwear-name {
+  font-size: 1.3em;
+}
+
+.shop-btn {
+  font-size: 1.3em;
+  border: 2px solid black;
+  background-color: white;
+  padding: 10px 35px;
+  margin-bottom: 1.5rem;
+}
+.shop-btn-tshirts {
+  font-size: 1.3em;
+  border: 2px solid black;
+  background-color: white;
+  padding: 10px 15px;
+  margin-bottom: 1.5rem;
+}
+
+.tshirts-container {
+  display: flex;
+}
+
+.mens-tshirts-container,
+.ladies-tshirts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.home-image {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.made-by {
+  color: grey;
+}
+
+.demo-btn {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+}
+
+@media screen and (min-width: 769px) {
+  .header-container {
+    position: static;
+  }
+  .home-image {
+    height: 320px;
+    width: 80%;
+  }
+  .tshirts-container {
+    width: 80%;
+    .home-image {
+      width: 100%;
+    }
+  }
+  .toggle-btn,
+  .overlay {
+    display: none;
+  }
+  .nav-container {
+    width: 100%;
+    height: 5em;
+    position: sticky;
+    background-color: rgba(255, 255, 255,0.8);
+    top: 0;
+    padding: 30px;
+    transition: none;
+    z-index: auto;
+  }
+  .nav-container ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+  }
+  .nav-container ul li {
+    opacity: 1;
+  }
+}
