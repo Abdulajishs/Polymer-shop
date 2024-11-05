@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/briefcase.png"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>HOME-SHOP</title>
+  </head>
+  <body>
+    <div class="parent-container">
+      <header class="header-container">
+        <button class="toggle-btn" onclick="toggleMenu()">☰</button>
+        <p class="header-name"><a href="./home.html">S H O P</a></p>
+        <a href="./cart.html" class="cart">
+          <img src="./images/shopping-cart-black-shape.png" alt="cart icon" />
+        </a>
+        <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+      </header>
+      <nav class="nav-container" id="navContainer">
+        <ul>
+          <li><a href="./mens-outerwear.html">Men's Outerwear</a></li>
+          <li><a href="./ladies-outwear.html">Ladies Outerwear</a></li>
+          <li><a href="./mens-tshirts.html">Men's T-Shirts</a></li>
+          <li><a href="./ladies-tshirts.html">Ladies T-Shirts</a></li>
+        </ul>
+      </nav>
+
+      <a href="./mens-outerwear.html" class="img-url">
+        <img
+          src="./images/mens_outerwear.jpg"
+          alt="mens_outerwear"
+          class="home-image"
+          href="./mens-outerwear.html"
+        />
+      </a>
+      <p class="outerwear-name">Men's Outerwear</p>
+      <a href="./mens-outerwear.html"
+        ><button class="shop-btn">SHOP NOW</button></a
+      >
+
+      <a href="./ladies-outwear.html" class="img-url">
+        <img
+          src="./images/ladies_outerwear.jpg"
+          alt="ladies_outerwear"
+          class="home-image"
+        />
+      </a>
+      <p class="outerwear-name">Ladies Outerwear</p>
+      <a href="./ladies-outwear.html">
+        <button class="shop-btn">SHOP NOW</button>
+      </a>
+
+      <div class="tshirts-container">
+        <div class="mens-tshirts-container">
+          <a href="./mens-tshirts.html" class="img-url">
+            <img
+              src="./images/mens_tshirts.jpg"
+              alt="mens_tshirts"
+              class="home-image"
+            />
+          </a>
+          <p class="outerwear-name">Men's T-Shirts</p>
+          <a href="./mens-tshirts.html">
+            <button class="shop-btn-tshirts">SHOP NOW</button>
+          </a>
+        </div>
+        <div class="mens-tshirts-container">
+          <a href="./ladies-tshirts.html" class="img-url">
+            <img
+              src="./images/ladies_tshirts.jpg"
+              alt="ladies_tshirts"
+              class="home-image"
+            />
+          </a>
+          <p class="outerwear-name">Ladies T-Shirts</p>
+          <a href="./ladies-tshirts.html">
+            <button class="shop-btn-tshirts">SHOP NOW</button>
+          </a>
+        </div>
+      </div>
+
+      <p class="made-by">Made by Polymer</p>
+      <button class="demo-btn">DEMO ONLY</button>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

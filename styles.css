@@ -8,6 +8,7 @@
   font-family: "Roboto", "Noto", sans-serif;
   font-size: 13px;
   line-height: 1.5;
+  width: 100vw;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -18,9 +19,10 @@
 
 .header-container {
   position: sticky;
+  padding-bottom: 10px;
   top: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255,0.8);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .toggle-btn {
@@ -31,24 +33,24 @@
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 1.5em;
-  margin: 1em 1.5em;
+  margin: 1em 1.5em 0 1.5em;
 }
 .header-name {
   font-size: 1.3em;
   font-weight: 600;
-  margin: 1em;
+  margin: 1em 1.5em 0 1.5em;
+
   text-align: center;
 }
 
 .nav-container {
-  width: 60%;
+  width: 80%;
   height: 100%;
   position: fixed;
   background-color: white;
-  left: -60%;
+  left: -80%;
   top: 0;
-  padding: 30px 15px;
+  padding: 30px 0;
   transition: left 0.3s ease;
   z-index: 5;
 }
@@ -57,6 +59,7 @@
   display: flex;
   flex-direction: column;
   gap: 1.5em;
+  padding: 0 1em;
 }
 .nav-container ul li {
   color: black;
@@ -88,7 +91,7 @@
   top: 0;
   right: 0;
   font-size: 1.5em;
-  margin: 1em 1.5em;
+  margin: 1em 1.5em 0 1.5em;
 }
 
 .outerwear-name {
@@ -139,6 +142,223 @@
   padding: 10px 20px;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Mens-outwear styles */
+
+.page-heading {
+  font-size: 1.1em;
+  opacity: 0.8;
+}
+.items-count {
+  font-size: 1em;
+  opacity: 0.6;
+}
+
+.grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 10px 30px 10px;
+  row-gap: 40px;
+}
+
+.grid-item {
+  list-style-type: none;
+  justify-items: center;
+}
+.mens-wear-img {
+  width: 100%;
+}
+#mens-outerwear-main-img {
+  display: none;
+}
+.dress-name {
+  font-weight: 600;
+  text-align: center;
+}
+.dress-price {
+  opacity: 0.5;
+}
+
+/* single item page */
+.back-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.5em;
+  margin: 1em 1.5em 0 1.5em;
+}
+.product-description-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.description-container {
+  padding: 2em;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.dress-title {
+  font-size: 1.5em;
+}
+
+hr {
+  width: 100%;
+}
+.common-text {
+  color: grey;
+}
+#outwear-price {
+  margin-bottom: 1rem;
+}
+
+.size-selector {
+  width: 100%;
+  position: relative;
+}
+#size-label {
+  position: absolute;
+  left: 0;
+}
+#size {
+  color: black;
+}
+#quantity-label {
+  position: absolute;
+  left: 0;
+}
+.select-item {
+  width: 100%;
+  padding-left: 80px;
+  font-size: 1em;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  flex: 1;
+  appearance: none;
+  border-bottom: 1px solid grey;
+  padding-bottom: 1em;
+}
+.select-item:focus {
+  border: none;
+  border-bottom: 2px solid black;
+}
+.dropdown-img {
+  position: absolute;
+  right: 0;
+}
+
+ul {
+  padding: 0 3em;
+}
+
+.add-cart-btn {
+  width: 100%;
+  padding: 1.5em;
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #172c50;
+  color: white;
+}
+/* Cart page */
+.cart-items {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.cart-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+  width: 90%;
+}
+
+.cart-details {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+}
+.qty-size-price-container {
+  padding-left: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.cancel-btn {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+}
+.qty-selector {
+  position: relative;
+}
+#qty-label {
+  position: absolute;
+  left: 0;
+}
+.select-qty {
+  width: 100%;
+  padding: 0 15px 0 35px;
+  font-size: 1em;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  flex: 1;
+  appearance: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+.cart-dropdown-img {
+  position: absolute;
+  right: 0;
+}
+.total-amt{
+  align-self: self-end;
+  margin-right: 3em;
+  font-weight: 900;
+}
+.total-btn-container {
+  align-self: self-end;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  /* margin-bottom: 500px; */
+}
+footer {
+  display: none;
+}
+.checkout-btn {
+  width: 100%;
+  padding: 1.5em;
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #172c50;
+  color: white;
+}
+
+/* Desktop view */
 @media screen and (min-width: 769px) {
   .header-container {
     position: static;
@@ -149,7 +369,7 @@
   }
   .tshirts-container {
     width: 80%;
-    .home-image {
+    .img-url {
       width: 100%;
     }
   }
@@ -161,7 +381,7 @@
     width: 100%;
     height: 5em;
     position: sticky;
-    background-color: rgba(255, 255, 255,0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     top: 0;
     padding: 30px;
     transition: none;
@@ -177,4 +397,132 @@
   .nav-container ul li {
     opacity: 1;
   }
+  .img-url {
+    width: 80%;
+    img {
+      width: 100%;
+    }
+  }
+
+  /* Mens outwear styles */
+  .grid-container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 10px 30px 10px;
+  }
+
+  .grid-item {
+    list-style-type: none;
+    justify-items: center;
+  }
+  .mens-wear-img {
+    width: 100%;
+  }
+  #mens-outerwear-main-img {
+    display: block;
+  }
+
+  /* Single-item styles */
+  .product-description-container {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    align-items: start;
+    margin-bottom: 15em;
+  }
+
+  .dress-img {
+    width: 100%;
+    justify-items: start;
+    padding: 5em 3em;
+  }
+  .description-container {
+    box-sizing: border-box;
+    padding: 5em 3em;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5em;
+  }
+
+  .add-cart-btn {
+    width: auto;
+    border: 2px solid black;
+    box-sizing: border-box;
+    padding: 8px 44px;
+    font-size: 1rem;
+    font-weight: 500;
+    position: static;
+    background-color: white;
+    color: black;
+  }
+  #outwear-price,
+  #size,
+  #quantity {
+    font-size: 16px;
+  }
+
+  /* Cart page   */
+  .cart-items {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .cart-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+    width: 100%;
+  }
+  
+  .cart-details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    position: relative;
+  }
+  .qty-size-price-container {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .outwear-title {
+    width: 40%;
+  }
+  nav {
+    visibility: hidden;
+  }
+  .checkout-btn {
+    width: auto;
+    border: 2px solid black;
+    box-sizing: border-box;
+    padding: 8px 44px;
+    font-size: 1rem;
+    font-weight: 500;
+    position: static;
+    background-color: white;
+    color: black;
+  }
+  .total-amt {
+    align-self: auto;
+  }
+  .total-btn-container {
+    align-self: auto;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 500px;
+  }
+  footer {
+    display: block;
+  }
+
 }

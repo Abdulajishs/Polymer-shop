@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/briefcase.png"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Your Cart-SHOP</title>
+  </head>
+  <body>
+    <div class="parent-container">
+      <header class="header-container">
+        <button class="toggle-btn" onclick="toggleMenu()">☰</button>
+        <p class="header-name"><a href="./home.html">S H O P</a></p>
+        <button class="cart">
+          <img src="./images/shopping-cart-black-shape.png" alt="cart icon" />
+        </button>
+        <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+      </header>
+      <nav class="nav-container" id="navContainer">
+        <ul>
+          <li><a href="./mens-outerwear.html">Men's Outerwear</a></li>
+          <li><a href="./ladies-outwear.html">Ladies Outerwear</a></li>
+          <li><a href="./mens-tshirts.html">Men's T-Shirts</a></li>
+          <li><a href="./ladies-tshirts.html">Ladies T-Shirts</a></li>
+        </ul>
+      </nav>
+      <p style="font-size: 1rem;">Your Cart</p>
+      <p style="color: grey;">(2 item)</p>
+
+      <div class="cart-items">
+        <div class="cart-container">
+          <img
+            src="./images/mensOutwear/mens_3.jpg"
+            alt="Men's tech shell"
+            height="75px"
+            width="75px"
+          />
+          <div class="cart-details">
+            <p class="outwear-title">Men's Tech Shell Full-Zip</p>
+
+            <button class="cancel-btn">
+              <img src="./images/close.png" alt="close"/>
+            </button>
+
+            <div class="qty-size-price-container">
+              <div class="qty-selector">
+                <p class="common-text" id="qty-label">Qty:</p>
+                <select id="qty" name="qty" class="select-qty">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+                <img
+                  src="./images/markdown.png"
+                  alt="dropdown"
+                  class="cart-dropdown-img"
+                />
+              </div>
+              <p class="common-text">Size:&nbsp;&nbsp;&nbsp;M</p>
+              <p class="common-text">$50.20</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart-container">
+            <img
+              src="./images/mensOutwear/mens_1.jpg"
+              alt="Men's tech shell"
+              height="75px"
+              width="75px"
+            />
+            <div class="cart-details">
+              <p class="outwear-title">Anvil L/S Crew Neck-Grey</p>
+  
+              <button class="cancel-btn">
+                <img src="./images/close.png" />
+              </button>
+              <div class="qty-size-price-container">
+                <div class="qty-selector">
+                  <p class="common-text" id="qty-label">Qty:</p>
+                  <select id="qty" name="qty" class="select-qty">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                  <img
+                    src="./images/markdown.png"
+                    alt="dropdown"
+                    class="cart-dropdown-img"
+                  />
+                </div>
+                <p class="common-text">Size:&nbsp;&nbsp;&nbsp;M</p>
+                <p class="common-text">$22.15</p>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="total-btn-container">
+          <p class="total-amt">Total: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$72.35</p>
+          <a href="./checkout.html"><button class="checkout-btn">CHECKOUT</button></a>
+      </div>
+
+      <footer>
+          <p class="made-by">Made by Polymer</p>
+          <button class="demo-btn">DEMO ONLY</button>
+      </footer>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/briefcase.png"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Checkout-SHOP</title>
+  </head>
+  <body>
+    <div class="parent-container">
+      <header class="header-container">
+        <button class="toggle-btn" onclick="toggleMenu()">☰</button>
+        <p class="header-name"><a href="./home.html">S H O P</a></p>
+        <a href="./cart.html" class="cart">
+          <img src="./images/shopping-cart-black-shape.png" alt="cart icon" />
+        </a>
+        <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+      </header>
+      <nav class="nav-container" id="navContainer">
+        <ul>
+          <li><a href="./mens-outerwear.html">Men's Outerwear</a></li>
+          <li><a href="./ladies-outwear.html">Ladies Outerwear</a></li>
+          <li><a href="./mens-tshirts.html">Men's T-Shirts</a></li>
+          <li><a href="./ladies-tshirts.html">Ladies T-Shirts</a></li>
+        </ul>
+      </nav>
+
+      <p class="made-by">Made by Polymer</p>
+      <button class="demo-btn">DEMO ONLY</button>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
