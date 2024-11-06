@@ -23,13 +23,187 @@
         <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
       </header>
       <nav class="nav-container" id="navContainer">
-        <ul>
+        <ul class="list-nav">
           <li><a href="./mens-outerwear.html">Men's Outerwear</a></li>
           <li><a href="./ladies-outwear.html">Ladies Outerwear</a></li>
           <li><a href="./mens-tshirts.html">Men's T-Shirts</a></li>
           <li><a href="./ladies-tshirts.html">Ladies T-Shirts</a></li>
         </ul>
       </nav>
+
+      <p style="font-size: 15px;">Checkout</p>
+      <p style="font-size: 13px; color: grey;">Shop is a demo app-form data will not be sent</p>
+      <form class="form-container">
+        <div class="form-container-one">
+        <p class="section-heading">Account Information</p>
+        <div  class="checkout-label">
+          <input type="email" id="email" placeholder="Email" required />
+          <label for="email" class="label-name">Email</label>
+        </div>
+        <div  class="checkout-label">
+          <input type="text" id="phone" placeholder="Phone" required />
+          <label for="phone" class="label-name">Phone Number</label>
+        </div>
+
+        <p class="section-heading">Shipping Address</p>
+        <div  class="checkout-label">
+          <input type="text" id="address" placeholder="Address" required />
+          <label for="address" class="label-name">Address</label>
+        </div>
+        <div  class="checkout-label">
+          <input type="text" id="city" placeholder="City" required />
+          <label for="city" class="label-name">City</label>
+        </div>
+        <div class="state-zip-container">
+          <div  class="checkout-label">
+            <input
+              type="text"
+              id="state"
+              placeholder="State/Province"
+              required
+            />
+            <label for="state" class="label-name">State/Province</label>
+          </div>
+          <div  class="checkout-label">
+            <input
+              type="text"
+              id="zip"
+              placeholder="Zip/Postal Code"
+              required
+            />
+            <label for="zip" class="label-name">Zip/Postal Code</label>
+          </div>
+        </div>
+
+        <label for="country">Country</label>
+        <select name="country" id="country" class="country-select">
+          <option value="United States">United States</option>
+          <option value="Canada">Canada</option>
+        </select>
+
+        <p class="section-heading">Billing Address</p>
+        <div class="checkbox-container" id="checkbox">
+          <input
+            type="checkbox"
+            class="checkbox"
+            id="differentBilling"
+            onclick="diffBilling()"
+          />
+          <label for="differentBilling">Use different billing address</label>
+        </div>
+        <!--  -->
+        <div id="diff" class="diff">
+          <div class="checkout-label">
+            <input
+              type="text"
+              id="diffaddress"
+              placeholder="Address"
+              required
+            />
+            <label for="diffaddress"  class="label-name">Address</label>
+          </div>
+          <div  class="checkout-label">
+            <input type="text" id="diffcity" placeholder="City" required />
+            <label for="diffcity" class="label-name">City</label>
+          </div>
+          <div class="state-zip-container">
+            <div  class="checkout-label">
+              <input
+                type="text"
+                id="diffstate"
+                placeholder="State/Province"
+                required
+              />
+              <label for="diffstate" class="label-name">State/Province</label>
+            </div>
+            <div  class="checkout-label">
+              <input
+                type="text"
+                id="diffzip"
+                placeholder="Zip/Postal Code"
+                required
+              />
+              <label for="diffzip" class="label-name">Zip/Postal Code</label>
+            </div>
+          </div>
+          <div class="diffcountry">
+            <label for="country">Country</label>
+            <select name="country" id="country" class="diffcountry-select">
+              <option value="United States">United States</option>
+              <option value="Canada">Canada</option>
+            </select>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+      <div class="form-container-two">
+
+        <p class="section-heading">Payment Method</p>
+        <div  class="checkout-label">
+          <input type="text" id="cardholder" placeholder="Cardholder Name" required />
+          <label for="cardholder" class="label-name">Cardholder Name</label>
+        </div>
+        <div  class="checkout-label">
+          <input type="number" id="cardNumber" placeholder="Card Number" required />
+          <label for="cardNumber" class="label-name">Card Number</label>
+        </div>
+      
+
+        <div class="card-container">
+          <label class="expiry">Expiry</label>
+          <select name="month" id="month" class="country-select">
+            <option value="Jan">Jan</option>
+            <option value="Feb">Feb</option>
+            <option value="Mar">Mar</option>
+            <option value="Apr">Apr</option>
+            <option value="May">May</option>
+            <option value="Jun">Jun</option>
+            <option value="Jul">Jul</option>
+            <option value="Aug">Aug</option>
+            <option value="Sep">Sep</option>
+            <option value="Oct">Oct</option>
+            <option value="Nov">Nov</option>
+            <option value="Dec">Dec</option>
+          </select>
+          <select name="year" id="year" class="country-select">
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+          </select>
+          <div  class="checkout-label">
+            <input type="number" id="cvv" placeholder="CVV" required />
+            <label for="cvv" class="label-name" >CVV</label>
+          </div>
+        </div>
+
+        <p class="section-heading">Order Summary</p>
+        <div class="summary-container">
+          <div class="each-item">
+            <p>Men's Tech Shell Full-Zip</p>
+            <p>$50.20</p>
+          </div>
+          <div class="each-item">
+            <p>Anvil L/S Crew Neck-Grey</p>
+            <p>$22.15</p>
+          </div>
+        </div>
+        <div class="total-bill">
+          <p>Total</p>
+          <p>$72.35</p>
+        </div>
+
+        <a href="./home.html"><button class="add-cart-btn">PLACE ORDER</button></a>
+      </div>
+
+      </form>
 
       <p class="made-by">Made by Polymer</p>
       <button class="demo-btn">DEMO ONLY</button>

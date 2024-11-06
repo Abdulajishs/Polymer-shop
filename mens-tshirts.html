@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="icon"
       type="image/png"
@@ -11,10 +11,187 @@
     />
     <link rel="stylesheet" href="./styles.css" />
     <title>Men's Tshirts-SHOP</title>
-</head>
-<body>
-    <h1>Men's Tshirts</h1>
-    <p class="header-name"><a href="./home.html">S H O P</a></p>
+  </head>
+  <body>
+    <div class="parent-container">
+      <header class="header-container">
+        <button class="toggle-btn" onclick="toggleMenu()">☰</button>
+        <p class="header-name"><a href="./home.html">S H O P</a></p>
+        <a href="./cart.html" class="cart">
+          <img src="./images/shopping-cart-black-shape.png" alt="cart icon" />
+        </a>
+        <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+      </header>
+      <nav class="nav-container" id="navContainer">
+        <ul>
+          <li ><a href="./mens-outerwear.html">Men's Outerwear</a></li>
+          <li ><a href="./ladies-outwear.html">Ladies Outerwear</a></li>
+          <li class="mens-tshirts-header"><a href="./mens-tshirts.html">Men's T-Shirts</a></li>
+          <li><a href="./ladies-tshirts.html">Ladies T-Shirts</a></li>
+        </ul>
+      </nav>
+      <img
+        src="./images/mens_tshirts.jpg"
+        alt="mens_outerwear"
+        class="home-image"
+        id="mens-outerwear-main-img"
+        href="./mens-outerwear.html"
+      />
+      <p class="page-heading">Men's Tshirts</p>
+      <p class="items-count">(16 items)</p>
 
-</body>
+      <ul class="grid-container">
+        <a href="./single-item.html">
+          <li class="grid-item">
+            <img
+              src="./images/mensOutwear/mens_3.jpg"
+              alt="mens wear 1"
+              class="mens-wear-img"
+            />
+            <p class="dress-name">Men's Tech Shell Full-Zip</p>
+            <p class="dress-price">$50.20</p>
+          </li>
+        </a>
+        <li class="grid-item">
+          <img
+            src="./images/mensOutwear/mens_1.jpg"
+            alt="mens wear 1"
+            class="mens-wear-img"
+          />
+          <p class="dress-name">Anvil L/S Crew Neck</p>
+          <p class="dress-price">$22.15</p>
+        </li>
+        <li class="grid-item">
+          <img
+            src="./images/mensOutwear/mens_4.jpg"
+            alt="mens wear 1"
+            class="mens-wear-img"
+          />
+          <p class="dress-name">Green Flex Fleece Zip Hoodie</p>
+          <p class="dress-price">$45.65</p>
+        </li>
+        <li class="grid-item">
+          <img
+            src="./images/mensOutwear/mens_2.jpg"
+            alt="mens wear 1"
+            class="mens-wear-img"
+          />
+          <p class="dress-name">Android Nylon Packable jacket</p>
+          <p class="dress-price">$33.60</p>
+        </li>
+        <li class="grid-item">
+          <img
+            src="./images/mensOutwear/mens_1.jpg"
+            alt="mens wear 1"
+            class="mens-wear-img"
+          />
+          <p class="dress-name">Men's Tech Shell Full-Zip</p>
+          <p class="dress-price">$50.20</p>
+        </li>
+        <li class="grid-item">
+          <img
+            src="./images/mensOutwear/mens_4.jpg"
+            alt="mens wear 1"
+            class="mens-wear-img"
+          />
+          <p class="dress-name">Anvil L/S Crew Neck</p>
+          <p class="dress-price">$22.15</p>
+        </li>
+        <li class="grid-item">
+          <img
+            src="./images/mensOutwear/mens_2.jpg"
+            alt="mens wear 1"
+            class="mens-wear-img"
+          />
+          <p class="dress-name">Green Flex Fleece Zip Hoodie</p>
+          <p class="dress-price">$45.65</p>
+        </li>
+        <li class="grid-item">
+          <img
+            src="./images/mensOutwear/mens_3.jpg"
+            alt="mens wear 1"
+            class="mens-wear-img"
+          />
+          <p class="dress-name">Android Nylon Packable jacket</p>
+          <p class="dress-price">$33.60</p>
+        </li>
+        <li class="grid-item">
+          <img
+            src="./images/mensOutwear/mens_1.jpg"
+            alt="mens wear 1"
+            class="mens-wear-img"
+          />
+          <p class="dress-name">Men's Tech Shell Full-Zip</p>
+          <p class="dress-price">$50.20</p>
+        </li>
+        <li class="grid-item">
+          <img
+            src="./images/mensOutwear/mens_4.jpg"
+            alt="mens wear 1"
+            class="mens-wear-img"
+          />
+          <p class="dress-name">Anvil L/S Crew Neck</p>
+          <p class="dress-price">$22.15</p>
+        </li>
+        <li class="grid-item">
+          <img
+            src="./images/mensOutwear/mens_2.jpg"
+            alt="mens wear 1"
+            class="mens-wear-img"
+          />
+          <p class="dress-name">Green Flex Fleece Zip Hoodie</p>
+          <p class="dress-price">$45.65</p>
+        </li>
+        <li class="grid-item">
+          <img
+            src="./images/mensOutwear/mens_3.jpg"
+            alt="mens wear 1"
+            class="mens-wear-img"
+          />
+          <p class="dress-name">Android Nylon Packable jacket</p>
+          <p class="dress-price">$33.60</p>
+        </li>
+        <li class="grid-item">
+          <img
+            src="./images/mensOutwear/mens_1.jpg"
+            alt="mens wear 1"
+            class="mens-wear-img"
+          />
+          <p class="dress-name">Men's Tech Shell Full-Zip</p>
+          <p class="dress-price">$50.20</p>
+        </li>
+        <li class="grid-item">
+          <img
+            src="./images/mensOutwear/mens_4.jpg"
+            alt="mens wear 1"
+            class="mens-wear-img"
+          />
+          <p class="dress-name">Anvil L/S Crew Neck</p>
+          <p class="dress-price">$22.15</p>
+        </li>
+        <li class="grid-item">
+          <img
+            src="./images/mensOutwear/mens_2.jpg"
+            alt="mens wear 1"
+            class="mens-wear-img"
+          />
+          <p class="dress-name">Green Flex Fleece Zip Hoodie</p>
+          <p class="dress-price">$45.65</p>
+        </li>
+        <li class="grid-item">
+          <img
+            src="./images/mensOutwear/mens_3.jpg"
+            alt="mens wear 1"
+            class="mens-wear-img"
+          />
+          <p class="dress-name">Android Nylon Packable jacket</p>
+          <p class="dress-price">$33.60</p>
+        </li>
+      </ul>
+
+      <p class="made-by">Made by Polymer</p>
+      <button class="demo-btn">DEMO ONLY</button>
+    </div>
+    <script src="./index.js"></script>
+  </body>
 </html>
