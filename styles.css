@@ -625,7 +625,7 @@ input:not(:placeholder-shown) + label {
 
   /* Cart page   */
   .cart-items {
-    width: 60%;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -686,7 +686,7 @@ input:not(:placeholder-shown) + label {
 
   /* Checkout page */
   .form-container {
-    width: 60vw;
+    width: 90vw;
     padding: 3vw;
     display: flex;
     flex-direction: row;
@@ -699,4 +699,13 @@ input:not(:placeholder-shown) + label {
   .form-container-two {
     width: 50%;
   }
+}
+
+@media screen and (min-width : 1025px){
+  .cart-items{
+    width: 60%;
+  }
+  .form-container {
+    width: 60vw;
+  }  
 }
